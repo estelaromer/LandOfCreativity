@@ -2935,6 +2935,25 @@ header {
       header .nav .menu #toggle {
         text-align: right;
         font-weight: 700; }
+        @media screen and (min-width: 768px) {
+          header .nav .menu #toggle {
+            text-align: left;
+            display: none; } }
+      @media screen and (min-width: 768px) {
+        header .nav .menu {
+          /*max-width: 50%;*/
+          float: left; } }
+    @media screen and (min-width: 768px) {
+      header .nav ul {
+        text-align: right;
+        margin-right: 50px; } }
+    @media screen and (min-width: 1500px) {
+      header .nav ul {
+        margin-right: 150px; } }
+    @media screen and (min-width: 768px) {
+      header .nav ul li {
+        display: inline-block;
+        padding: 0 20px; } }
     header .nav ul li a {
       display: block;
       text-decoration: none;
@@ -2944,6 +2963,12 @@ header {
       border-bottom: 1px solid #737373; }
       header .nav ul li a:hover {
         color: #fff; }
+      @media screen and (min-width: 768px) {
+        header .nav ul li a {
+          border-bottom: none;
+          text-align: left;
+          display: inline-block;
+          padding: 15px 0; } }
   header .intro {
     position: relative;
     background-image: url("../images/home.jpg");
