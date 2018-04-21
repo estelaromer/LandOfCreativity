@@ -2912,32 +2912,37 @@ html {
 header, footer {
   background-color: #000; }
 
-header .nav .menu {
-  height: 20px;
-  padding: 14px 2em; }
-
-header .nav .menu .logo {
-  float: left;
-  background-image: url("../images/logo.png");
-  width: 40px;
-  height: 19px;
-  cursor: pointer; }
-  header .nav .menu .logo:hover {
-    background-image: url("../images/logo.gif"); }
-
-#toggle {
-  text-align: right;
-  font-weight: 700; }
-
-header .nav ul li a {
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 700;
-  padding: 10px 0;
-  border-bottom: 1px solid #737373; }
-  header .nav ul li a:hover {
-    color: #fff; }
+header {
+  position: relative; }
+  header .nav {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: auto; }
+    header .nav .menu {
+      height: 20px;
+      padding: 14px 2em;
+      overflow: hidden; }
+      header .nav .menu .logo {
+        float: left;
+        background-image: url("../images/logo.png");
+        width: 40px;
+        height: 19px;
+        cursor: pointer; }
+        header .nav .menu .logo:hover {
+          background-image: url("../images/logo.gif"); }
+      header .nav .menu #toggle {
+        text-align: right;
+        font-weight: 700; }
+    header .nav ul li a {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+      padding: 10px 0;
+      border-bottom: 1px solid #737373; }
+      header .nav ul li a:hover {
+        color: #fff; }
 
 #toggle,
 header .nav ul li a,
@@ -2945,7 +2950,7 @@ footer .footer-inf p,
 footer .arrow a {
   color: #737373; }
 
-.intro p, h1, .enlace a {
+header .intro p, h1, .enlace a {
   color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
