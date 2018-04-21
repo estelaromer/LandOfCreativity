@@ -99,3 +99,42 @@ footer .arrow a{
 header .intro p, h1, .enlace a{
     color: $fontColorIntro;
 }
+
+footer{
+        .arrow{
+        a{
+            display: block;
+            text-align: center;
+            color: $fontColorHeaderFooter;
+            font-size: 2em;
+            padding-top: 10px;
+        }
+    }
+    .social{
+        padding: 20px 0;
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                background-color: $fontColorHeaderFooter;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 50px;
+                margin: 0 5px;
+                a{
+                    display: block;
+                    color: $iconColor;
+                }
+            }
+        }
+    }
+    .footer-inf{
+        p{
+            color: $fontColorHeaderFooter;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}
