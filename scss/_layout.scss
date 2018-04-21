@@ -1,0 +1,17 @@
+.wrapper{
+    @include box-sizing('border-box');
+    max-width: 96%;
+    padding: 0 2%;
+    height: auto;
+}
+
+.row{
+    max-width: 75%;
+    margin: 0 auto;
+    &:after{
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+    }
+}
