@@ -2898,7 +2898,7 @@ readers do not read off random characters that represent icons */
   height: auto; }
 
 .row {
-  max-width: 75%;
+  max-width: 60%;
   margin: 0 auto; }
   .row:after {
     clear: both;
@@ -2985,6 +2985,62 @@ footer .arrow a {
 
 header .intro p, h1, .enlace a {
   color: #fff; }
+
+section h2 {
+  margin: 100px 0;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3em; }
+
+.form {
+  margin: 40px 0; }
+  .form form input, .form form textarea {
+    display: block;
+    margin: 10px 0;
+    width: 100%; }
+  .form form input {
+    border: none;
+    border-bottom: 2px solid #a6a6a6;
+    margin-bottom: 20px; }
+    .form form input:focus {
+      border-bottom: 2px solid #70a9b1; }
+    .form form input[type='submit'] {
+      width: 100%;
+      background-color: #e6e6e6;
+      padding: 10px 0;
+      color: #737373;
+      border-bottom: none; }
+  .form form textarea {
+    resize: none;
+    height: 100px;
+    border: 2px solid #737373;
+    margin-bottom: 20px; }
+    .form form textarea:focus {
+      border: 2px solid #737373; }
+  .form form label {
+    margin: 10px 0;
+    color: #737373; }
+
+.contactinfo {
+  margin-bottom: 40px; }
+  .contactinfo div {
+    margin-bottom: 20px; }
+    .contactinfo div h4 {
+      text-align: center;
+      font-weight: 700;
+      padding: 10px 0; }
+    .contactinfo div ul li {
+      text-align: center;
+      line-height: 1.2em; }
+      .contactinfo div ul li a {
+        text-decoration: none;
+        color: #737373; }
+        .contactinfo div ul li a:hover {
+          font-weight: 700; }
 
 footer .arrow a {
   display: block;
