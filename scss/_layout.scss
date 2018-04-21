@@ -1,7 +1,6 @@
 .wrapper{
     @include box-sizing('border-box');
-    max-width: 96%;
-    padding: 0 2%;
+    max-width: 100%;
     height: auto;
 }
 
