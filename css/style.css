@@ -2986,6 +2986,31 @@ footer .arrow a {
 header .intro p, h1, .enlace a {
   color: #fff; }
 
+section h2 {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 3em; }
+
+.contactinfo div {
+  margin-bottom: 40px; }
+  .contactinfo div h4 {
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 0; }
+  .contactinfo div ul li {
+    text-align: center;
+    line-height: 1.2em; }
+    .contactinfo div ul li a {
+      text-decoration: none;
+      color: #737373; }
+      .contactinfo div ul li a:hover {
+        font-weight: 700; }
+
 footer .arrow a {
   display: block;
   text-align: center;
