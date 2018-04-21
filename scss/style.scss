@@ -101,7 +101,7 @@ header .intro p, h1, .enlace a{
 }
 
 section h2{
-    margin: 50px 0;
+    margin: 100px 0;
     padding: 20px 0;
     text-align: center;
     color: $fontColorIntro;
@@ -111,9 +111,49 @@ section h2{
     font-size: $h2Size;
 }
 
+.form{
+            margin: 40px 0;
+            form{
+                input, textarea{
+                    display: block;
+                    margin: 10px 0;
+                    width: 100%;
+                }
+                input{
+                    border: none;
+                    border-bottom: 2px solid #a6a6a6;
+                    &:focus{
+                        border-bottom: 2px solid #70a9b1;;
+                    }
+                    margin-bottom: 20px;
+                    &[type='submit']{
+                        width: 100%;
+                        background-color: #e6e6e6;
+                        padding: 10px 0;
+                        color: $fontColorHeaderFooter;
+                        border-bottom: none;
+                    }
+                }
+                textarea{
+                    resize: none;
+                    height: 100px;
+                    border: 2px solid $fontColorHeaderFooter;
+                    &:focus{
+                        border: 2px solid $fontColorHeaderFooter;
+                    }
+                    margin-bottom: 20px;
+                }
+                label{
+                    margin: 10px 0;
+                    color: #737373;
+                }
+            }
+}
+
 .contactinfo{
+    margin-bottom:40px;
     div{
-        margin-bottom:40px;
+        margin-bottom: 20px;
         h4{
             text-align: center;
             font-weight: 700;
@@ -124,9 +164,9 @@ section h2{
             line-height: 1.2em;
             a{
                 text-decoration: none;
-                color: #737373;
+                color: $fontColorHeaderFooter;
                 &:hover{
-                    font-weight: 700;
+                    font-weight: $bold;
                 }
             }
         }
