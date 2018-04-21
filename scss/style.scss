@@ -101,7 +101,8 @@ header .intro p, h1, .enlace a{
 }
 
 section h2{
-    margin: 100px 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
     padding: 20px 0;
     text-align: center;
     color: $fontColorIntro;
@@ -111,8 +112,35 @@ section h2{
     font-size: $h2Size;
 }
 
+.derecha{
+    background-color: #e6e6e6;
+}
+
+.izquierda h3{
+    margin-top: 20px;
+}
+
+.derecha h3{
+    margin-bottom: 20px;
+}
+
+.izquierda, .derecha{
+    text-align: center;
+    h3{
+        font-weight: $bold;
+        font-size: 1.6em;
+    }
+    padding: 50px 0;
+    img{
+        max-width: 100%;
+    }
+    p{
+        display: none;
+    }
+}
 .form{
-            margin: 40px 0;
+            margin-top: 60px;
+            margin-bottom: 30px;
             form{
                 input, textarea{
                     display: block;

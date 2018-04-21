@@ -2987,7 +2987,8 @@ header .intro p, h1, .enlace a {
   color: #fff; }
 
 section h2 {
-  margin: 100px 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
   padding: 20px 0;
   text-align: center;
   color: #fff;
@@ -2996,8 +2997,29 @@ section h2 {
   font-style: italic;
   font-size: 3em; }
 
+.derecha {
+  background-color: #e6e6e6; }
+
+.izquierda h3 {
+  margin-top: 20px; }
+
+.derecha h3 {
+  margin-bottom: 20px; }
+
+.izquierda, .derecha {
+  text-align: center;
+  padding: 50px 0; }
+  .izquierda h3, .derecha h3 {
+    font-weight: 700;
+    font-size: 1.6em; }
+  .izquierda img, .derecha img {
+    max-width: 100%; }
+  .izquierda p, .derecha p {
+    display: none; }
+
 .form {
-  margin: 40px 0; }
+  margin-top: 60px;
+  margin-bottom: 30px; }
   .form form input, .form form textarea {
     display: block;
     margin: 10px 0;
