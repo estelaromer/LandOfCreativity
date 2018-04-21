@@ -2910,4 +2910,16 @@ readers do not read off random characters that represent icons */
 html {
   font-family: "PT Sans", "Arial", sans-serif; }
 
+header, footer {
+  background-color: #000; }
+
+#toggle,
+header .nav ul li a,
+footer .footer-inf p,
+footer .arrow a {
+  color: #737373; }
+
+.intro p, h1, .enlace a {
+  color: #fff; }
+
 /*# sourceMappingURL=style.css.map */

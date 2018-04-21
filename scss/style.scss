@@ -2,6 +2,22 @@
 @import 'variables';
 @import 'mixins';
 @import 'layout';
+
 html{
     font-family: $fontFamily;
+}
+
+header,footer{
+    background-color: $bgHeaderFooter;
+}
+
+#toggle, 
+header .nav ul li a,
+footer .footer-inf p,
+footer .arrow a{
+    color: $fontColorHeaderFooter;
+}
+
+.intro p, h1, .enlace a{
+    color: $fontColorIntro;
 }
