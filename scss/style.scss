@@ -205,6 +205,7 @@ section h2{
 }
 .derecha{
     background-color: #e6e6e6;
+
 }
 
 .izquierda h3{
@@ -215,11 +216,16 @@ section h2{
     margin-bottom: 20px;
 }
 
+
 .izquierda, .derecha{
     text-align: center;
+    @media screen and (min-width: $bpTablet){
+        text-align: left;
+    }
     h3{
         font-weight: $bold;
         font-size: 1.6em;
+        margin-bottom: 20px;
     }
     padding: 50px 0;
     img{
@@ -227,6 +233,9 @@ section h2{
     }
     p{
         display: none;
+        @media screen and (min-width: $bpTablet) {
+            display: block;
+        }
     }
 }
 .form{

@@ -2898,7 +2898,7 @@ readers do not read off random characters that represent icons */
   height: auto; }
 
 .row {
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto; }
   .row:after {
     clear: both;
@@ -2906,6 +2906,50 @@ readers do not read off random characters that represent icons */
     content: "";
     height: 0; }
 
+@media screen and (min-width: 768px) {
+  .row {
+    max-width: 90%; }
+
+  [class*="col-"] {
+    float: left;
+    padding: 20px; }
+
+  .col-t-6 {
+    max-width: 40%; }
+
+  .col-t-4 {
+    width: 33.33333333%; }
+
+  .col-t-9 {
+    width: 75%; }
+
+  .col-t-3 {
+    width: 25%; }
+
+  .colt-t-8 {
+    width: 66.66666666%; } }
+@media screen and (min-width: 1200px) {
+  .row {
+    max-width: 75%; }
+
+  [class*="col-"] {
+    float: left;
+    padding: 20px; }
+
+  .col-d-6 {
+    width: 40%; }
+
+  .col-d-4 {
+    width: 33.33333333%; }
+
+  .col-d-9 {
+    width: 75%; }
+
+  .col-d-3 {
+    width: 25%; }
+
+  .colt-d-8 {
+    width: 66.66666666%; } }
 html {
   font-family: "PT Sans", "Arial", sans-serif; }
 
@@ -2947,7 +2991,7 @@ header {
       header .nav ul {
         text-align: right;
         margin-right: 50px; } }
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 1200px) {
       header .nav ul {
         margin-right: 150px; } }
     @media screen and (min-width: 768px) {
@@ -3075,13 +3119,20 @@ section h2 {
 .izquierda, .derecha {
   text-align: center;
   padding: 50px 0; }
+  @media screen and (min-width: 768px) {
+    .izquierda, .derecha {
+      text-align: left; } }
   .izquierda h3, .derecha h3 {
     font-weight: 700;
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    margin-bottom: 20px; }
   .izquierda img, .derecha img {
     max-width: 100%; }
   .izquierda p, .derecha p {
     display: none; }
+    @media screen and (min-width: 768px) {
+      .izquierda p, .derecha p {
+        display: block; } }
 
 .form {
   margin-top: 60px;
