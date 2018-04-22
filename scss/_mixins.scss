@@ -11,6 +11,9 @@
     background-image: $bgImage;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: bottom center;
+    @media screen and (min-width:$bpTablet){
+        background-position: top center;
+    }
     height: 100vh;
 }
