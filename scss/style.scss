@@ -85,7 +85,7 @@ header{
         position: relative;
         @include background(url('../images/home.jpg'));
         width: 100%;
-        max-height: 100vh;
+        max-height: 854px;
         .shade{
             position: absolute;
             top: 0;
@@ -94,7 +94,8 @@ header{
             height: 100%;
             background-color: rgba(0,0,0,.5);
             .texto{
-                padding: 25%;
+                margin: auto;
+                padding: 20% 0;
                 width: 50%;
                 text-align: center;
                 h1{
@@ -111,6 +112,11 @@ header{
                     border: 1px solid $fontColorIntro;
                     padding: 10px;
                     font-size: 0.8em;
+                    &:hover{
+                        border: none;
+                        background-color: $fontColorIntro;
+                        color: $fontColorHeaderFooter;
+                    }
                 }
 
             }     

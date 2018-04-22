@@ -2912,13 +2912,13 @@ readers do not read off random characters that represent icons */
 
   [class*="col-"] {
     float: left;
-    padding: 20px; }
+    padding: 20px 10%; }
 
   .col-t-6 {
-    max-width: 40%; }
+    max-width: 30%; }
 
   .col-t-4 {
-    width: 33.33333333%; }
+    width: 13.33333333%; }
 
   .col-t-9 {
     width: 75%; }
@@ -2934,13 +2934,14 @@ readers do not read off random characters that represent icons */
 
   [class*="col-"] {
     float: left;
-    padding: 20px; }
+    padding: 20px 10%; }
 
   .col-d-6 {
     width: 40%; }
 
   .col-d-4 {
-    width: 33.33333333%; }
+    padding: 20px 5%;
+    width: 23.33333333%; }
 
   .col-d-9 {
     width: 75%; }
@@ -3018,10 +3019,10 @@ header {
     background-image: url("../images/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: top center;
     height: 100vh;
     width: 100%;
-    max-height: 100vh; }
+    max-height: 854px; }
     header .intro .shade {
       position: absolute;
       top: 0;
@@ -3030,7 +3031,8 @@ header {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5); }
       header .intro .shade .texto {
-        padding: 25%;
+        margin: auto;
+        padding: 20% 0;
         width: 50%;
         text-align: center; }
         header .intro .shade .texto h1 {
@@ -3045,6 +3047,10 @@ header {
           border: 1px solid #fff;
           padding: 10px;
           font-size: 0.8em; }
+          header .intro .shade .texto .enlace a:hover {
+            border: none;
+            background-color: #fff;
+            color: #737373; }
 
 #toggle,
 header .nav ul li a,
