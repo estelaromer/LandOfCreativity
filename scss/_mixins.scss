@@ -1,0 +1,19 @@
+@mixin box-sizing($boxSizing){
+    -webkit-box-sizing: $boxSizing;
+    -moz-box-sizing: $boxSizing;
+    -o-box-sizing: $boxSizing;
+    -ms-box-sizing: $boxSizing;
+    box-sizing: $boxSizing;
+
+}
+
+@mixin background($bgImage){
+    background-image: $bgImage;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    @media screen and (min-width:$bpTablet){
+        background-position: top center;
+    }
+    height: 100vh;
+}

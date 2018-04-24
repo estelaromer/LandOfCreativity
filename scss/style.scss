@@ -1,0 +1,370 @@
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'layout';
+
+html{
+    font-family: $fontFamily;
+}
+
+header,footer{
+    background-color: $bgHeaderFooter;
+}
+
+header{
+    position: relative;
+    .nav{
+        background-color: $bgHeaderFooter;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        height: auto;
+     
+        .menu{
+            height: 20px;
+            padding: 14px 2em;
+            overflow: hidden;
+            .logo{
+                float: left;
+                background-image: url('../images/logo.png');
+                width: 40px;
+                height: 19px;
+                cursor: pointer;
+                &:hover{
+                    background-image: url('../images/logo.gif');
+                }
+            }
+            #toggle{
+                text-align: right;
+                font-weight: 700;
+                @media screen and (min-width: $bpTablet){
+                    text-align: left;
+                    display: none;
+                }
+            }
+            @media screen and (min-width: $bpTablet){
+                /*max-width: 50%;*/
+                float: left;
+            }
+        }
+        ul{
+            @media screen and (min-width: $bpTablet){
+                text-align: right;
+                margin-right: 50px;
+            }
+            @media screen and (min-width: $bpDesktop){
+                margin-right: 150px;
+            }
+        }
+        ul li{
+            @media screen and (min-width: $bpTablet){
+                display: inline-block;
+                padding: 0 20px;
+            }
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+            padding: 10px 0;
+            border-bottom: 1px solid $fontColorHeaderFooter;
+            &:hover{
+                color: $fontEnlacesHover;
+            }
+            @media screen and (min-width: $bpTablet){
+                border-bottom: none;
+                text-align: left;
+                display: inline-block;
+                padding: 15px 0;
+            }
+        }
+    }
+
+    .intro{
+        position: relative;
+        @include background(url('../images/home.jpg'));
+        width: 100%;
+        max-height: 50vh;
+        @media screen and (min-width: $bpTablet){
+            max-height: 75vh;
+        }
+        @media screen and (min-width: $bpDesktop){
+            max-height: 100vh;
+        }
+        .shade{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+            .texto{
+                margin: auto;
+                padding: 15% 0;
+                @media screen and (min-width: $bpTablet){
+                    padding: 20% 0;
+                }
+                width: 50%;
+                text-align: center;
+                h1{
+                    margin: 20px 0;
+                    font-size: $h1Size;
+                    font-weight: $bold;
+                }
+                
+                .enlace a{
+                    display: block;
+                    width: 100px;
+                    margin: 0 auto;
+                    text-decoration: none;
+                    border: 1px solid $fontColorIntro;
+                    padding: 10px;
+                    font-size: 0.8em;
+                    &:hover{
+                        border: none;
+                        background-color: $fontColorIntro;
+                        color: $fontColorHeaderFooter;
+                    }
+                }
+
+            }     
+        }
+    }
+}
+
+#toggle, 
+header .nav ul li a,
+footer .footer-inf p,
+footer .arrow a{
+    color: $fontColorHeaderFooter;
+}
+
+header .intro p, h1, .enlace a{
+    color: $fontColorIntro;
+}
+
+section h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    text-align: center;
+    color: $fontColorIntro;
+    background-color: $bgHeaderFooter;
+    font-weight: 700;
+    font-style: italic;
+    font-size: $h2Size;
+    &#about{
+        display: none;
+    }
+}
+
+.story, .team{
+    text-align: center;
+    h3{
+        font-weight: $bold;
+        font-size: 1.2em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    hr{
+        width: 15%;
+        border-bottom: 2px solid $bgHeaderFooter;
+    }
+}
+
+.story{
+    p{
+        margin: 30px 0;
+        color: $fontColorHeaderFooter;
+    }
+}
+
+.team{
+    .employees{
+        margin-top: 50px;
+        .employee{
+            margin-bottom: 30px;
+            h4{
+                font-weight: $bold;
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+            h5{
+                font-size: 0.8em;
+                color: $fontColorHeaderFooter;
+                font-weight: $bold;
+                margin-bottom: 10px;
+            }
+
+            hr{
+                border-bottom: 1px solid $fontColorHeaderFooter;
+            }
+            .employee-pic{
+                margin-bottom: 30px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+            p{
+                padding: 10px;
+                color: $fontColorHeaderFooter;
+            }
+
+            .twitter-username{
+                margin-top: 10px;
+                font-weight: $bold;
+            }
+            
+        }
+    }
+    
+}
+.derecha{
+    background-color: #e6e6e6;
+
+}
+
+.izquierda h3{
+    margin-top: 20px;
+}
+
+.derecha h3{
+    margin-bottom: 20px;
+}
+
+
+.izquierda, .derecha{
+    text-align: center;
+    @media screen and (min-width: $bpTablet){
+        text-align: left;
+    }
+    h3{
+        font-weight: $bold;
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+    padding: 50px 0;
+    img{
+        max-width: 100%;
+    }
+    p{
+        display: none;
+        @media screen and (min-width: $bpTablet) {
+            display: block;
+        }
+        @media screen and (min-width: $bpDesktop) {
+            width: 70%;
+        }
+    }
+}
+.form{
+            margin-top: 60px;
+            margin-bottom: 30px;
+            form{
+                input, textarea{
+                    display: block;
+                    margin: 10px 0;
+                    width: 100%;
+                }
+                input{
+                    border: none;
+                    border-bottom: 2px solid #a6a6a6;
+                    &:focus{
+                        border-bottom: 2px solid #70a9b1;;
+                    }
+                    margin-bottom: 20px;
+                    &[type='submit']{
+                        width: 100%;
+                        background-color: #e6e6e6;
+                        padding: 10px 0;
+                        color: $fontColorHeaderFooter;
+                        border-bottom: none;
+                    }
+                }
+                textarea{
+                    resize: none;
+                    height: 100px;
+                    border: 2px solid $fontColorHeaderFooter;
+                    &:focus{
+                        border: 2px solid $fontColorHeaderFooter;
+                    }
+                    margin-bottom: 20px;
+                }
+                label{
+                    margin: 10px 0;
+                    color: #737373;
+                }
+            }
+}
+
+.contactinfo{
+    @media screen and (min-width: $bpTablet){
+        margin-top: 30px;
+    }
+    margin-bottom:40px;
+    div{
+        margin-bottom: 20px;
+        h4{
+            text-align: center;
+            @media screen and (min-width: $bpTablet){
+                text-align: left;
+            }
+            font-weight: 700;
+            padding: 10px 0;
+        }
+        ul li{
+            text-align: center;
+            @media screen and (min-width: $bpTablet){
+                text-align: left;
+            }
+            line-height: 1.2em;
+            a{
+                text-decoration: none;
+                color: $fontColorHeaderFooter;
+                &:hover{
+                    font-weight: $bold;
+                }
+            }
+        }
+    }
+}
+
+footer{
+        .arrow{
+        a{
+            display: block;
+            text-align: center;
+            color: $fontColorHeaderFooter;
+            font-size: 2em;
+            padding-top: 10px;
+        }
+    }
+    .social{
+        padding: 20px 0;
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                background-color: $fontColorHeaderFooter;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 50px;
+                margin: 0 5px;
+                a{
+                    display: block;
+                    color: $iconColor;
+                }
+            }
+        }
+    }
+    .footer-inf{
+        p{
+            color: $fontColorHeaderFooter;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+}

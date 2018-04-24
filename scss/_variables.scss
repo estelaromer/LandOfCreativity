@@ -1,0 +1,20 @@
+/*Fuente a utilizar: Google Font PT Sans 400, 700, italic*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i');
+
+/*Iconos: Facebook, Twitter, Google+, Instagram y Youtube de Fontawesome*/
+@import '../scss-fontawesome/fontawesome.scss';
+@import '../scss-fontawesome/fa-brands.scss';
+@import '../scss-fontawesome/fa-solid.scss';
+
+$fontFamily: 'PT Sans', 'Arial', sans-serif;
+$fontColorHeaderFooter: #737373;
+$fontEnlacesHover: #fff;
+$bgHeaderFooter: #000;
+$fontColorIntro: #fff;
+$bold: 700;
+$regular: 400;
+$h1Size: 170%;
+$iconColor: #000;
+$h2Size: 3em;
+$bpTablet: 768px;
+$bpDesktop: 1200px;
