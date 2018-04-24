@@ -176,6 +176,7 @@ section h2{
 .story{
     p{
         margin: 30px 0;
+        color: $fontColorHeaderFooter;
     }
 }
 
@@ -207,6 +208,7 @@ section h2{
             }
             p{
                 padding: 10px;
+                color: $fontColorHeaderFooter;
             }
 
             .twitter-username{
@@ -250,6 +252,9 @@ section h2{
         display: none;
         @media screen and (min-width: $bpTablet) {
             display: block;
+        }
+        @media screen and (min-width: $bpDesktop) {
+            width: 70%;
         }
     }
 }

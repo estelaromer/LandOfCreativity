@@ -3085,7 +3085,8 @@ section h2 {
     border-bottom: 2px solid #000; }
 
 .story p {
-  margin: 30px 0; }
+  margin: 30px 0;
+  color: #737373; }
 
 .team .employees {
   margin-top: 50px; }
@@ -3107,7 +3108,8 @@ section h2 {
       .team .employees .employee .employee-pic img {
         border-radius: 50%; }
     .team .employees .employee p {
-      padding: 10px; }
+      padding: 10px;
+      color: #737373; }
     .team .employees .employee .twitter-username {
       margin-top: 10px;
       font-weight: 700; }
@@ -3138,6 +3140,9 @@ section h2 {
     @media screen and (min-width: 768px) {
       .izquierda p, .derecha p {
         display: block; } }
+    @media screen and (min-width: 1200px) {
+      .izquierda p, .derecha p {
+        width: 70%; } }
 
 .form {
   margin-top: 60px;
