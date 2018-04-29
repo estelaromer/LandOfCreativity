@@ -105,10 +105,7 @@ header{
             background-color: rgba(0,0,0,.5);
             .texto{
                 margin: auto;
-                padding: 15% 0;
-                @media screen and (min-width: $bpTablet){
-                    padding: 20% 0;
-                }
+                padding: 20% 0;
                 width: 50%;
                 text-align: center;
                 h1{
