@@ -3031,9 +3031,12 @@ header {
       background-color: rgba(0, 0, 0, 0.5); }
       header .intro .shade .texto {
         margin: auto;
-        padding: 20% 0;
+        padding: 25% 0;
         width: 50%;
         text-align: center; }
+        @media screen and (min-width: 768px) {
+          header .intro .shade .texto {
+            padding: 20% 0; } }
         header .intro .shade .texto h1 {
           margin: 20px 0;
           font-size: 170%;
