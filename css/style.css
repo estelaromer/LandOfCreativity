@@ -2890,7 +2890,6 @@ readers do not read off random characters that represent icons */
 
 .wrapper {
   -webkit-box-sizing: "border-box";
-  -moz-box-sizing: "border-box";
   -o-box-sizing: "border-box";
   -ms-box-sizing: "border-box";
   box-sizing: "border-box";
@@ -2965,6 +2964,7 @@ header {
         header .nav .menu .logo:hover {
           background-image: url("../images/logo.gif"); }
       header .nav .menu #toggle {
+        cursor: pointer;
         text-align: right;
         font-weight: 700; }
         @media screen and (min-width: 768px) {
@@ -2975,32 +2975,35 @@ header {
         header .nav .menu {
           /*max-width: 50%;*/
           float: left; } }
-    @media screen and (min-width: 768px) {
-      header .nav ul {
-        text-align: right;
-        margin-right: 50px; } }
-    @media screen and (min-width: 1200px) {
-      header .nav ul {
-        margin-right: 150px; } }
-    @media screen and (min-width: 768px) {
-      header .nav ul li {
-        display: inline-block;
-        padding: 0 20px; } }
-    header .nav ul li a {
-      display: block;
-      text-decoration: none;
-      text-align: center;
-      font-weight: 700;
-      padding: 10px 0;
-      border-bottom: 1px solid #737373; }
-      header .nav ul li a:hover {
-        color: #fff; }
+    header .nav #enlaces {
+      display: none; }
       @media screen and (min-width: 768px) {
-        header .nav ul li a {
-          border-bottom: none;
-          text-align: left;
+        header .nav #enlaces {
+          display: block;
+          text-align: right;
+          margin-right: 50px; } }
+      @media screen and (min-width: 1200px) {
+        header .nav #enlaces {
+          margin-right: 150px; } }
+      @media screen and (min-width: 768px) {
+        header .nav #enlaces li {
           display: inline-block;
-          padding: 15px 0; } }
+          padding: 0 20px; } }
+      header .nav #enlaces li a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        padding: 10px 0;
+        border-bottom: 1px solid #737373; }
+        header .nav #enlaces li a:hover {
+          color: #fff; }
+        @media screen and (min-width: 768px) {
+          header .nav #enlaces li a {
+            border-bottom: none;
+            text-align: left;
+            display: inline-block;
+            padding: 15px 0; } }
   header .intro {
     position: relative;
     background-image: url("../images/home.jpg");
@@ -3165,7 +3168,7 @@ section h2 {
       border-bottom: none; }
   .form form textarea {
     resize: none;
-    height: 100px;
+    height: 200px;
     border: 2px solid #737373;
     margin-bottom: 20px; }
     .form form textarea:focus {
